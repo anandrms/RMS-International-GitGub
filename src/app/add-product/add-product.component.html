@@ -1,0 +1,19 @@
+<h4>Add Product</h4>
+
+<form [formGroup]="addProductForm" (ngSubmit)="addProduct($event)">
+
+    <label for="name">Product Name: </label>
+    <input id="name" type="text" formControlName="productName">
+
+    <label for="prize">Prize: </label>
+    <input id="prize" type="text" formControlName="productPrize">
+
+    <input type="file" (change)="handleFileUpload($event)">
+
+    <button type="submit" >Submit</button>
+  
+</form>
+<hr>
+<hr>
+<br>
+<app-product-list></app-product-list>

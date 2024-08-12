@@ -1,0 +1,35 @@
+<h4>user Register Form</h4>
+<form [formGroup]="registerForm" >
+<label>name</label>
+<input formControlName="name">
+<label>user name</label>
+<input formControlName="userName">
+<label>password</label>
+<input formControlName="password">
+<label>phone</label>
+<input formControlName="phone">
+<label>email</label>
+<input formControlName="email">
+<div formGroupName="address">
+<label>door</label>
+<input formControlName="doorNo">
+<label>street</label>
+<input formControlName="street">
+<label>city</label>
+<input formControlName="city">
+<label>district</label>
+<input formControlName="district">
+<label>state</label>
+<input formControlName="state">
+<label>pincode</label>
+<input formControlName="pincode" />
+</div>
+
+<button (click)="onSubmit()"> click</button>
+</form>
+
+
+<hr>
+<hr>
+<br>
+<app-user-list></app-user-list>

@@ -1,0 +1,12 @@
+<form [formGroup]="loginForm" (ngSubmit)="post()">
+
+    <label for="first-name">First Name: </label>
+    <input id="first-name" type="text" formControlName="firstName">
+
+    <label for="last-name">Last Name: </label>
+    <input id="last-name" type="text" formControlName="lastName">
+
+    <button type="submit" [disabled]="!loginForm.valid">Submit</button>
+  
+</form>
+<button (click)="get()">lkl</button>
